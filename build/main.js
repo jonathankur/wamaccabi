@@ -1266,6 +1266,7 @@ var SocialuploadPage = /** @class */ (function () {
         this.http = http;
         this.loadingCtrl = loadingCtrl;
         this.pictaken = false;
+        this.img = './assets/img/takepic.jpg';
         this.su = {
             title: '',
             me: window.localStorage.getItem('myac'),
@@ -1289,6 +1290,7 @@ var SocialuploadPage = /** @class */ (function () {
         this.camera.getPicture(options).then(function (imageData) {
             that.pictaken = true;
             that.su.picdata = imageData;
+            that.img = 'data:image/jpeg;base64,' + imageData;
         }, function (err) {
             alert(JSON.stringify(err));
         });
@@ -1310,6 +1312,7 @@ var SocialuploadPage = /** @class */ (function () {
         this.camera.getPicture(options).then(function (imageData) {
             that.pictaken = true;
             that.su.picdata = imageData;
+            that.img = 'data:image/jpeg;base64,' + imageData;
         }, function (err) {
             alert(JSON.stringify(err));
         });
@@ -1332,7 +1335,7 @@ var SocialuploadPage = /** @class */ (function () {
     };
     SocialuploadPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-socialupload',template:/*ion-inline-start:"/var/www/html/ionic/soccer/src/pages/socialupload/socialupload.html"*/'<ion-header no-border no-shadow  style="background-color:white">\n	<ion-navbar align-title="center"  style="background-color:white">\n		<ion-title style="background-color:white"><img src="./assets/img/mainbanner.jpg"></ion-title>\n	</ion-navbar>\n</ion-header>\n\n\n<ion-content no-padding text-center>\n<div style="text-align:center; color:white; background-color:#8EC63F; padding:6px; font-size:1.4em !important; margin-bottom: 0px !important">MANAGEMENT POST</div>\n\n<ion-list no-padding>\n<ion-item>\n<ion-label stacked>Title</ion-label>\n<ion-input [(ngModel)]="su.title"></ion-input>\n</ion-item>\n\n<ion-item>\n<ion-label stacked>Content</ion-label>\n<ion-textarea [(ngModel)]="su.content"></ion-textarea>\n</ion-item>\n<ion-item>\n<ion-row>\n<ion-col col-12>\n<button ion-button icon-start full (click)="getpicture()">\n<ion-icon name="camera"></ion-icon>\nTake Picture\n</button>\n</ion-col>\n</ion-row>\n<ion-row>\n<ion-col col-12>\n<button ion-button icon-start full (click)="getcameraroll()">\n<ion-icon name="images"></ion-icon>\nCamera Roll\n</button>\n</ion-col>\n</ion-row>\n</ion-item>\n<ion-item *ngIf="pictaken">\n<ion-row>\n<ion-col col-12>\n<button ion-button full secondary (click)="dosubmit()" style="height:70px; min-height:70px">Upload</button>\n</ion-col>\n</ion-row>\n</ion-item> \n<ion-item>\n<ion-row>\n<ion-col col-12>\n<button ion-button icon-start full color="secondary" (click)="viewpast()">\n<ion-icon name="paper"></ion-icon>\nMy Past Posts\n</button>\n</ion-col>\n</ion-row>\n</ion-item>\n</ion-list>\n</ion-content>\n'/*ion-inline-end:"/var/www/html/ionic/soccer/src/pages/socialupload/socialupload.html"*/,
+            selector: 'page-socialupload',template:/*ion-inline-start:"/var/www/html/ionic/soccer/src/pages/socialupload/socialupload.html"*/'<ion-header no-border no-shadow  style="background-color:white">\n	<ion-navbar align-title="center"  style="background-color:white">\n		<ion-title style="background-color:white"><img src="./assets/img/mainbanner.jpg"></ion-title>\n	</ion-navbar>\n</ion-header>\n\n\n<ion-content no-padding text-center>\n<div style="text-align:center; color:white; background-color:#8EC63F; padding:6px; font-size:1.4em !important; margin-bottom: 0px !important">MANAGEMENT POST</div>\n\n<ion-list no-padding>\n<ion-item text-center>\n  <img [src]="img"  style="max-width:600px !important; max-height:600px !important; width:100%; height:100%">\n</ion-item>\n\n<ion-item>\n<ion-label stacked>Title</ion-label>\n<ion-input [(ngModel)]="su.title"></ion-input>\n</ion-item>\n\n<ion-item>\n<ion-label stacked>Content</ion-label>\n<ion-textarea [(ngModel)]="su.content"></ion-textarea>\n</ion-item>\n<ion-item>\n<ion-row>\n<ion-col col-12>\n<button ion-button icon-start full (click)="getpicture()">\n<ion-icon name="camera"></ion-icon>\nTake Picture\n</button>\n</ion-col>\n</ion-row>\n<ion-row>\n<ion-col col-12>\n<button ion-button icon-start full (click)="getcameraroll()">\n<ion-icon name="images"></ion-icon>\nCamera Roll\n</button>\n</ion-col>\n</ion-row>\n</ion-item>\n<ion-item *ngIf="pictaken">\n<ion-row>\n<ion-col col-12>\n<button ion-button full secondary (click)="dosubmit()" style="height:70px; min-height:70px">Upload</button>\n</ion-col>\n</ion-row>\n</ion-item> \n<ion-item>\n<ion-row>\n<ion-col col-12>\n<button ion-button icon-start full color="secondary" (click)="viewpast()">\n<ion-icon name="paper"></ion-icon>\nMy Past Posts\n</button>\n</ion-col>\n</ion-row>\n</ion-item>\n</ion-list>\n</ion-content>\n'/*ion-inline-end:"/var/www/html/ionic/soccer/src/pages/socialupload/socialupload.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_http__["a" /* HTTP */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
     ], SocialuploadPage);
