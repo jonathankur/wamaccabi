@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="au.com.macsoccer" version="1.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="au.com.macsoccer" version="1.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>WA Maccabi Soccer</name>
     <description>Maccabi Soccer Club</description>
     <author email="jon@goodsgalaxy.com.au" href="http://theparcelpeople.com.au">Jonathan Kur</author>
@@ -56,10 +56,10 @@
 <splash src="res/screen/ios/Default@2x~ipad~comany.png"/>
 
 <config-file parent="NSCameraUsageDescription" platform="ios" target="*-Info.plist">
- <string>Use Camera to Upload Pictures</string>
+ <string>Upload Pictures to your Profile, Social Feed or Marketplace items</string>
 </config-file>
 <config-file parent="NSPhotoLibraryUsageDescription" platform="ios" target="*-Info.plist">
- <string>Use Camera to Upload Pictures</string>
+ <string> Upload Pictures to your Profile, Social Feed or Marketplace items</string>
 </config-file>
 
 </platform>
@@ -110,10 +110,10 @@
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Use Camera to Upload Pictures" />
    </plugin>
 <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
-    <string>Use Camera to Upload Pictures</string>
+    <string>Upload Pictures to your Profile, Social Feed or Marketplace items</string>
 </edit-config>
 <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
-    <string>Use Camera to Upload Pictures</string>
+    <string>Upload Pictures to your Profile, Social Feed or Marketplace items</string>
 </edit-config>
 
 </widget>
