@@ -92,15 +92,15 @@ var map = {
 		2
 	],
 	"../pages/teamladder/teamladder.module": [
-		308,
+		306,
 		1
 	],
 	"../pages/teamnews/teamnews.module": [
-		306,
+		307,
 		0
 	],
 	"../pages/tipspast/tipspast.module": [
-		307,
+		308,
 		4
 	]
 };
@@ -2644,9 +2644,9 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/enter-credit-card/enter-credit-card.module#EnterCreditCardPageModule', name: 'EnterCreditCardPage', segment: 'enter-credit-card', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sell/sell.module#SellPageModule', name: 'SellPage', segment: 'sell', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/teamfixtures/teamfixtures.module#TeamfixturesPageModule', name: 'TeamfixturesPage', segment: 'teamfixtures', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/teamladder/teamladder.module#TeamladderPageModule', name: 'TeamladderPage', segment: 'teamladder', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/teamnews/teamnews.module#TeamnewsPageModule', name: 'TeamnewsPage', segment: 'teamnews', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tipspast/tipspast.module#TipspastPageModule', name: 'TipspastPage', segment: 'tipspast', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/teamladder/teamladder.module#TeamladderPageModule', name: 'TeamladderPage', segment: 'teamladder', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/tipspast/tipspast.module#TipspastPageModule', name: 'TipspastPage', segment: 'tipspast', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
