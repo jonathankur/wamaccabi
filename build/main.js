@@ -257,7 +257,7 @@ var HomePage = /** @class */ (function () {
         this.feed = [];
         this.manager = false;
         this.hmode = 0;
-        this.thisversion = 1;
+        this.thisversion = 2;
     }
     HomePage.prototype.getpushinfo = function () {
         var _this = this;
