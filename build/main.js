@@ -34,13 +34,15 @@ var MessagePage = /** @class */ (function () {
         this.loadingCtrl = loadingCtrl;
         this.s = [];
         this.s = {
-            me: window.localStorage.getItem('myAc'),
+            me: window.localStorage.getItem('myac'),
+            team: 0,
             sendpush: true,
             sendemail: true,
             content: ''
         };
     }
     MessagePage.prototype.ionViewDidLoad = function () {
+        this.s.team = this.navParams.get('team');
     };
     MessagePage.prototype.dosubmit = function () {
         var that = this;
@@ -62,9 +64,10 @@ var MessagePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-message',template:/*ion-inline-start:"/var/www/html/ionic/soccer/src/pages/message/message.html"*/'<ion-header no-border no-shadow  style="background-color:white">\n	<ion-navbar align-title="center"  style="background-color:white">\n		<ion-title style="background-color:white"><img src="./assets/img/mainbanner.jpg"></ion-title>\n	</ion-navbar>\n</ion-header>\n\n\n<ion-content no-padding text-center>\n<div style="text-align:center; color:white; background-color:#8EC63F; padding:6px; font-size:1.4em !important; margin-bottom: 0px !important">TEAM ANNOUNCEMENT</div>\n\n<ion-list no-padding>\n<ion-item>\n<ion-label stacked>Content</ion-label>\n<ion-textarea [(ngModel)]="s.content"></ion-textarea>\n</ion-item>\n<ion-item>\n<ion-label stacked>Send as Push Notification</ion-label>\n<ion-checkbox [(ngModel)]="s.sendpush"> </ion-checkbox>\n</ion-item>\n<ion-item>\n<ion-label stacked>Send as Email</ion-label>\n<ion-checkbox [(ngModel)]="s.sendemail"> </ion-checkbox>\n</ion-item>\n<ion-item>\n\n<ion-row>\n<ion-col col-12>\n<button ion-button full secondary (click)="dosubmit()" style="height:70px; min-height:70px">Send</button>\n</ion-col>\n</ion-row>\n</ion-item> \n</ion-list>\n</ion-content>\n\n'/*ion-inline-end:"/var/www/html/ionic/soccer/src/pages/message/message.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_http__["a" /* HTTP */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_http__["a" /* HTTP */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_http__["a" /* HTTP */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _d || Object])
     ], MessagePage);
     return MessagePage;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=message.js.map
