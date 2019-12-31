@@ -26387,38 +26387,3 @@ page-history .odd {
 page-history .even {
   background-color: #F7F7FF;
 }
-
-page-tipping table {
-  width: 100% !important;
-}
-
-page-tipping td {
-  padding: 5px;
-}
-
-page-tipping th {
-  padding: 5px;
-  text-align: center;
-  color: white;
-  background-color: black;
-}
-
-page-tipping .odd {
-  background-color: #E2E2FF;
-}
-
-page-tipping .even {
-  background-color: #FFFFFF;
-}
-
-page-tipspast .even {
-  background-color: white;
-}
-
-page-tipspast .odd {
-  background-color: #F6F6FF;
-}
-
-page-tipspast .und {
-  border-bottom: 1px solid gaimsboro;
-}
