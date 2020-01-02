@@ -1,4 +1,4 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <widget id="au.com.macsoccer" version="1.4.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>WA Maccabi Soccer</name>
     <description>Maccabi Soccer Club</description>
@@ -11,7 +11,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <access origin="https://theparcelpeople2.com.au" subdomains="true" />
+    <access origin="http://theparcelpeople2.com.au" subdomains="true" />
 
 
     <preference name="ScrollEnabled" value="false" />
