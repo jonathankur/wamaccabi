@@ -1,14 +1,14 @@
 webpackJsonp([1],{
 
-/***/ 303:
+/***/ 302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeamfixturesPageModule", function() { return TeamfixturesPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeamnewsPageModule", function() { return TeamnewsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teamfixtures__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teamnews__ = __webpack_require__(305);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var TeamfixturesPageModule = /** @class */ (function () {
-    function TeamfixturesPageModule() {
+var TeamnewsPageModule = /** @class */ (function () {
+    function TeamnewsPageModule() {
     }
-    TeamfixturesPageModule = __decorate([
+    TeamnewsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__teamfixtures__["a" /* TeamfixturesPage */],
+                __WEBPACK_IMPORTED_MODULE_2__teamnews__["a" /* TeamnewsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__teamfixtures__["a" /* TeamfixturesPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__teamnews__["a" /* TeamnewsPage */]),
             ],
         })
-    ], TeamfixturesPageModule);
-    return TeamfixturesPageModule;
+    ], TeamnewsPageModule);
+    return TeamnewsPageModule;
 }());
 
-//# sourceMappingURL=teamfixtures.module.js.map
+//# sourceMappingURL=teamnews.module.js.map
 
 /***/ }),
 
-/***/ 306:
+/***/ 305:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeamfixturesPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeamnewsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -57,29 +57,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the TeamfixturesPage page.
+ * Generated class for the TeamnewsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var TeamfixturesPage = /** @class */ (function () {
-    function TeamfixturesPage(navCtrl, navParams) {
+var TeamnewsPage = /** @class */ (function () {
+    function TeamnewsPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    TeamfixturesPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad TeamfixturesPage');
+    TeamnewsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad TeamnewsPage');
     };
-    TeamfixturesPage = __decorate([
+    TeamnewsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-teamfixtures',template:/*ion-inline-start:"/var/www/html/ionic/soccer/src/pages/teamfixtures/teamfixtures.html"*/'<!--\n  Generated template for the TeamfixturesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>teamfixtures</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/var/www/html/ionic/soccer/src/pages/teamfixtures/teamfixtures.html"*/,
+            selector: 'page-teamnews',template:/*ion-inline-start:"/var/www/html/ionic/soccer/src/pages/teamnews/teamnews.html"*/'<!--\n  Generated template for the TeamnewsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>teamnews</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/var/www/html/ionic/soccer/src/pages/teamnews/teamnews.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], TeamfixturesPage);
-    return TeamfixturesPage;
+    ], TeamnewsPage);
+    return TeamnewsPage;
 }());
 
-//# sourceMappingURL=teamfixtures.js.map
+//# sourceMappingURL=teamnews.js.map
 
 /***/ })
 
