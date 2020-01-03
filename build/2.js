@@ -1,14 +1,14 @@
 webpackJsonp([2],{
 
-/***/ 301:
+/***/ 302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeamfixturesPageModule", function() { return TeamfixturesPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SellPageModule", function() { return SellPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teamfixtures__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sell__ = __webpack_require__(305);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var TeamfixturesPageModule = /** @class */ (function () {
-    function TeamfixturesPageModule() {
+var SellPageModule = /** @class */ (function () {
+    function SellPageModule() {
     }
-    TeamfixturesPageModule = __decorate([
+    SellPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__teamfixtures__["a" /* TeamfixturesPage */],
+                __WEBPACK_IMPORTED_MODULE_2__sell__["a" /* SellPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__teamfixtures__["a" /* TeamfixturesPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__sell__["a" /* SellPage */]),
             ],
         })
-    ], TeamfixturesPageModule);
-    return TeamfixturesPageModule;
+    ], SellPageModule);
+    return SellPageModule;
 }());
 
-//# sourceMappingURL=teamfixtures.module.js.map
+//# sourceMappingURL=sell.module.js.map
 
 /***/ }),
 
-/***/ 304:
+/***/ 305:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeamfixturesPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SellPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -57,29 +57,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the TeamfixturesPage page.
+ * Generated class for the SellPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var TeamfixturesPage = /** @class */ (function () {
-    function TeamfixturesPage(navCtrl, navParams) {
+var SellPage = /** @class */ (function () {
+    function SellPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    TeamfixturesPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad TeamfixturesPage');
+    SellPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SellPage');
     };
-    TeamfixturesPage = __decorate([
+    SellPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-teamfixtures',template:/*ion-inline-start:"/var/www/html/ionic/soccer/src/pages/teamfixtures/teamfixtures.html"*/'<!--\n  Generated template for the TeamfixturesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>teamfixtures</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/var/www/html/ionic/soccer/src/pages/teamfixtures/teamfixtures.html"*/,
+            selector: 'page-sell',template:/*ion-inline-start:"/var/www/html/ionic/soccer/src/pages/sell/sell.html"*/'<!--\n  Generated template for the SellPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>sell</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/var/www/html/ionic/soccer/src/pages/sell/sell.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], TeamfixturesPage);
-    return TeamfixturesPage;
+    ], SellPage);
+    return SellPage;
 }());
 
-//# sourceMappingURL=teamfixtures.js.map
+//# sourceMappingURL=sell.js.map
 
 /***/ })
 
