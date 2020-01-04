@@ -2724,8 +2724,8 @@ var EnterCreditCardPage = /** @class */ (function () {
             var that_1 = this;
             this.stripe.createCardToken(card)
                 .then(function (token) {
-                var url = 'zz_newcc.php?tag=' + window.localStorage.getItem('myac') + '&token=' + JSON.stringify(token) + '&dflt=' + def;
-                alert(url);
+                var url = 'zs_newcc.php?tag=' + window.localStorage.getItem('myac') + '&token=' + JSON.stringify(token) + '&dflt=' + def;
+                //     alert(url);
                 _this.connect.getList(url).subscribe(function (data) {
                     that_1.zone.run(function () {
                         setTimeout(function () {
